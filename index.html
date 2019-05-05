@@ -1,9 +1,158 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <link rel="stylesheet" href="index.css" />
-  </head>
-  <body>
-    <!-- escreva seu codigo aqui -->
-  </body>
+    <head>
+
+        <title>Bárbara Silva Vidal</title>
+
+        <!-- Fav icon -->
+        <link rel="apple-touch-icon" sizes="57x57" href="img/icons/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="img/icons/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="img/icons/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="img/icons/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="img/icons/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="img/icons/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="img/icons/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="img/icons/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="img/icons/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="img/icons/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="img/icons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="img/icons/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="img/icons/favicon-16x16.png">
+
+        <!-- Simbols -->
+            <!--Para os ícones Google e Fabebook-->
+            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+            <!--Fonte-->
+            <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+
+        <!-- Style -->
+        <link rel="stylesheet" href="style/reset.css">
+        <link rel="stylesheet" href="style/index.css">
+    </head>
+    <body>
+        <div class="container ">
+            <div class="content">
+                <section class="image">
+                </section>
+
+                <!-- CREATE ACCOUNT -->
+                <section class="create-account">
+                    <div class="form-content">
+                        <h1>Create an Account!</h1>
+                        <form class="form" id="form" method="post" >
+                            <div class="pack-filds">
+                                <div class="each-fild form-input">
+                                    <input class="input" id="firstname" type="firstname" name="firstname" placeholder="First Name">
+                                </div>
+
+                                <!--Usado lib mask scripts/jquery.mask.min.js-->
+                                <div class="each-fild form-input">
+                                    <input class="input" id="tel" type="tel" name="telefone" placeholder="Phone">
+                                </div>
+                            </div>
+
+                            <div class="pack-filds">
+                                <div class="each-fild form-input">
+                                    <input class="input" id="email" type="email" name="email" placeholder="Email Address">
+                                </div>
+                            </div>
+
+                            <span class="password-error" >Passwords did not match. Please enter the same password in both fields.</span>
+
+                            <div class="pack-filds">
+                                <div class="each-fild form-input">
+                                    <input class="input" id="pass1" type="password" name="pass1" placeholder="Password">
+                                </div>
+                                <div class="each-fild form-input">
+                                    <input class="input" id="pass2" type="password" name="pass2" placeholder="Repeat Password">
+                                </div>
+                            </div>
+
+						  	<button class="submit transition" type="submit" id="submit">Register Account<button>
+						</form>
+                    </div>
+
+                    <div class="register-with">
+                    	<button class="submit-google transition" type="submit" id="submit-google"><i class="fab fa-google"></i>Register with Google<button>
+                        <button class="submit-fb transition" type="submit" id="submit-fb"><i class="fab fa-facebook-f"></i>Register with Facebook<button>
+                    </div>
+
+                    <div class="links-login">
+                        <button class="reset-password">Forgot Password?</button>
+                        <button class="login">Already have an account? Login!</button>
+                    </div>
+                </section>
+
+                <!-- LOGIN -->
+                <section class="already-have-account">
+                    <div class="form-content">
+                        <h1>Login!</h1>
+
+                        <form class="form" id="form-login" method="post" >
+                            <div class="pack-filds">
+                                <div class="each-fild form-input">
+                                    <input class="input" id="email-login" type="email" name="email-login" placeholder="Email Address">
+                                </div>
+                            </div>
+
+                            <div class="pack-filds">
+                                <div class="each-fild form-input">
+                                    <input class="input" id="pass" type="password" name="pass" placeholder="Password">
+                                </div>
+                            </div>
+
+						  	<button class="submit transition" type="submit" id="submit">Login<button>
+						</form>
+                    </div>
+
+                    <div class="links-login">
+                        <button class="register">Don't have an account? Register!</button>
+                    </div>
+                </section>
+
+                <!-- RESET PASSWORD -->
+                <section class="forgot-password">
+                    <div class="form-content">
+                        <h1>Reset Password!</h1>
+                        <form class="form" id="form-reset" method="post" >
+                            <div class="pack-filds">
+                                <div class="each-fild form-input">
+                                    <input class="input" id="emailreset" type="email" name="emailreset" placeholder="Email Address">
+                                </div>
+                            </div>
+                            <button class="submit transition" type="submit" id="submit">Send<button>
+                        </form>
+                    </div>
+
+                    <div class="links-login">
+                        <button class="register">Don't have an account? Register!</button>
+                    </div>
+                </section>
+
+                <!-- EMAIL SENT -->
+                <section class="email-sent">
+                    <div class="email-sent-content">
+                        <h1>Email Sent!</h1>
+                        <p>In a few moments, you will receive an email with the subject line "Reset your Password" that contains a link to reset your password.</p>
+                    </div>
+
+                    <div class="links-login">
+                        <button class="login-after">Login!</button>
+                    </div>
+                </section>
+
+
+
+            </div>
+        </div>
+
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+        <script src="scripts/jquery.mask.min.js"></script>
+        <script src="scripts/form.js"></script>
+        <script src="scripts/form-login.js"></script>
+        <script src="scripts/form-reset.js"></script>
+        <script src="scripts/scripts.js"></script>
+    </body>
 </html>
